@@ -1,0 +1,22 @@
+spring:
+    mvc:
+        pathmatch:
+            matching-strategy: path_pattern_parser
+    data:
+        redis:
+            port: 6379
+            host: localhost
+    jpa:
+        hibernate:
+            ddl-auto: create
+        properties:
+            hibernate:
+                format_sql: true
+        show-sql: true
+        open-in-view: false
+        database-platform: org.hibernate.dialect.MySQL8Dialect
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/my_cocktail
+        username: admin
+        password: '1234'
