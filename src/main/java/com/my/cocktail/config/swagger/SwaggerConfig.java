@@ -25,8 +25,8 @@ public class SwaggerConfig {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("문서화 제목 기입")
-                .description("해당 서비스 설명 기입")
+                .title("칵테일 레시피 API")
+                .description("칵테일 레시피 별 들어가는 주류 및 비율 정리")
                 .version("1.0")
                 .build();
     }
