@@ -3,7 +3,7 @@ package com.my.cocktail.common.dto;
 public class SwaggerNote {
     public final static String ITEM_READ_ALL_NOTE = """
                 모든 상품 목록 조회
-                GET /api/v1/items
+                GET /api/v1/cocktail
             
                 ResponseBody
                 {
@@ -53,19 +53,17 @@ public class SwaggerNote {
                  }
             """;
 
-    public final static String ITEM_CREATE_NOTE = """
-                    상품 등록하기
-                    POST /api/v1/items/           
+    public final static String COCKTAIL_CREATE_NOTE = """
+                    칵테일 레시피 등록하기
+                    POST /api/v1/cocktail       
                         
                     Request Body
                     {
-                        "name" : "아이템2",
-                        "price": 10000,
-                        "description" : "생활 상품입니다",
-                        "category" : "LIFE",
                         "memberId" : 1,
-                        "auctionPeriod" : 7,
-                        "immediatelyPrice" : 50000
+                        "cocktailName" : "잭콕"
+                        "cocktailMaterials" : [{ "name" : "잭 다니엘스", "ratio" : 1} , { "name" : "콜라", "ratio" : 3}],
+                        "cocktailDescription" : "버번 위스키에 콜라를 섞어 마시는 버번 콕 바리에이션",
+                        "degree" : 10
                     }
                         
                     Response Body
