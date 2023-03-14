@@ -60,7 +60,7 @@ public class SwaggerNote {
                     Request Body
                     {
                         "memberId" : 1,
-                        "cocktailName" : "잭콕"
+                        "cocktailName" : "잭콕",
                         "cocktailMaterials" : [{ "name" : "잭 다니엘스", "ratio" : 1} , { "name" : "콜라", "ratio" : 3}],
                         "cocktailDescription" : "버번 위스키에 콜라를 섞어 마시는 버번 콕 바리에이션",
                         "degree" : 10
